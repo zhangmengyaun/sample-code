@@ -12,10 +12,10 @@ class ContactsAndroidTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '4.2'
+        desired_caps['platformVersion'] = '4.4.2'
         desired_caps['deviceName'] = 'Android Emulator'
         desired_caps['app'] = PATH(
-            '../../../sample-code/apps/ContactManager/ContactManager.apk'
+            '/ContactManager.apk'
         )
         desired_caps['appPackage'] = 'com.example.android.contactmanager'
         desired_caps['appActivity'] = '.ContactManager'
